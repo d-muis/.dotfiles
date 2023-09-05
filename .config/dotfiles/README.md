@@ -8,7 +8,7 @@ dotfiles config status.showUntrackedFiles no
 dotfiles remote set-url github git@github.com:d-muis/.dotfiles.git
 ```
 
-# Setup description from scratch
+# Setup from scratch
 - [Hacker News Post](https://news.ycombinator.com/item?id=11071754)
 - [Atlassian Article](https://www.atlassian.com/git/tutorials/dotfiles)
 - [Siilwyn GH repo](https://github.com/Siilwyn/my-dotfiles/tree/master/.my-dotfiles)
