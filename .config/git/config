@@ -3,3 +3,5 @@
 	email = d-muis@proton.me
 [init]
 	defaultBranch = master
+[pull]
+	ff = only
