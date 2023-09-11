@@ -4,7 +4,7 @@
 
 # Dotfiles management
 #
-alias dotfiles='/usr/bin/git --git-dir=/home/d-muis/.dotfiles --work-tree=/home/d-muis'
+alias dotfiles='/usr/bin/git --git-dir=$XDG_STATE_HOME/dotfiles --work-tree=/home/d-muis'
 
 
 # Zsh configuration

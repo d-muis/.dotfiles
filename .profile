@@ -1,12 +1,13 @@
 #
-# ~/.zprofile
+# ~/.profile
 #
 
 
 # AUTOSTART
 #
 eval $(keychain --absolute --dir "$XDG_RUNTIME_DIR/keychain" --eval --quiet --noask $HOME/.ssh/id_ed25519)
-
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+mako &
 
 
 # ENVIRONMENT VARIABLES
