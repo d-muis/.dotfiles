@@ -19,7 +19,8 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 
 # Aliases
 #
-alias ls='ls --color=auto'
+alias ls='eza' #ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias cat='bat'
 alias less='bat'
+alias vim='nvim'
