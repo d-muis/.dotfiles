@@ -20,6 +20,7 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 # Aliases
 #
 alias ls='eza --icons -a --group-directories-first' #ls='ls --color=auto'
+alias lsl='ls -l'
 alias grep='grep --color=auto'
 alias cat='bat'
 alias less='bat'
