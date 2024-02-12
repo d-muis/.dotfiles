@@ -1,0 +1,132 @@
+{
+    
+    // Waybar Position Settings
+
+    "layer": "top", // Waybar at top layer
+    "position": "left", // Waybar position (top|bottom|left|right)
+    "margin": "10, 0, 10, 10",
+    "spacing": 5, 
+
+    // Modules Order (top -> bottom)
+
+    "modules-left": [
+        "clock",
+	"custom/sep",
+	"idle_inhibitor",
+	"tray"
+	],
+
+    "modules-center": [ 
+    	"hyprland/workspaces"
+	],
+
+    "modules-right": [
+	"hyprland/language",
+        "custom/sep",
+	"pulseaudio",
+	"custom/sep",
+	"network",
+	"custom/sep",
+	"battery" 
+	],
+    
+
+    // Modules configuration
+
+    "hyprland/workspaces": {
+        "all-outputs": true,
+	"show-special": true,
+	// "on-click": "activate",
+	"format": "{icon}",
+        "format-icons": {
+	    "urgent": "",
+	    "active": "",
+	    "default": ""
+	    },
+	},
+
+    "custom/sep": {
+        "format": "──",
+	"tooltip": false
+    },
+
+    "clock": {
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%H\n%M}",
+	"format-alt": "{:%d\n%m\n%y}"
+    },
+
+    "idle_inhibitor": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    },
+    
+    "pulseaudio": {
+        "tooltip-format": "{volume}%",
+        "format": "{icon}",
+	"format-alt": "{icon}\n{volume}",
+        "format-bluetooth": "{icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+    },
+    
+    "battery": {
+        // "rotate": 270,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+	"tooltip-format": "{capacity}%",
+        "format": "{icon}",
+	"format-alt": " {icon}\n{capacity}",
+        "format-charging": " \n{capacity}",
+        "format-icons": ["󰂎", "󰁻", "󰁼", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "hyprland/language": {
+        "format": "{shortDescription}"
+	},
+
+    "network": {
+        // "rotate": 90,
+        // "format-wifi": "",
+        "tooltip-format": "{essid}\n{signalStrength}%",
+        "format": "{icon}",
+	"format-alt": "{icon}\n{signalStrength}",
+	"format-ethernet": "󰈀",
+        "format-linked": "",
+        "format-disconnected": "⚠",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+
+    "custom/media": {
+        "format": "{icon} {}",
+        "return-type": "json",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    }
+}
+

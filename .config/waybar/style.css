@@ -1,0 +1,63 @@
+
+* { 
+    color: #dddddd;
+    background: none;
+    border: none;
+    font-family: "monotype";
+    font-size: 16px;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    /* border: 1px solid rgba(59, 59, 59, 1); */
+}
+
+tooltip {
+    background: rgba(0, 0, 0, 1);
+    border-radius: 8px;
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+#workspaces {
+    margin: 0px 6px 0px 6px;
+    padding: 0px 2px 0px 0px;
+    border-radius: 50px;
+    font-size: 12px;    
+}
+
+#workspaces button {
+    padding: 6px 6px 6px 6px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    background: transparent;
+    border: transparent;
+}
+
+#clock {
+    font-size: 1.2em;
+    margin: 16px 0px 0px 0px;
+}
+
+#custom-sep {
+    margin: 0px 0px 0px 0px;
+    opacity: 0.3
+}
+
+#tray {
+    margin-top: 10px;
+}
+
+#language, #pulseaudio, #network, #battery {
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+#battery {
+    margin-bottom: 18px;
+    padding-bottom: 2px;
+}
+
